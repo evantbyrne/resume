@@ -12,6 +12,8 @@ html, body, h1, h2, h3, p, blockquote, div, span, a, img, table, thead, tbody, t
 }
 
 div.parallax {
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
