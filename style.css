@@ -11,9 +11,22 @@ html, body, h1, h2, h3, p, blockquote, div, span, a, img, table, thead, tbody, t
 	padding: 0;
 }
 
+div.parallax {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 500px;
+	margin-bottom: -88px;
+	position: relative;
+	z-index: 1;
+}
+
 div.wrapper {
 	margin: auto;
+	position: relative;
 	width: 640px;
+	z-index: 2;
 }
 
 img.profile {
@@ -24,7 +37,6 @@ img.profile {
 	display: block;
 	height: 120px;
 	margin: 28px auto;
-	margin: 1.75rem auto;
 	width: 120px;
 }
 
@@ -90,5 +102,17 @@ td {
 	div.wrapper {
 		margin: 0 20px;
 		width: auto;
+	}
+}
+
+@media all and (max-height: 760px) {
+	div.parallax {
+		height: 400px;
+	}
+}
+
+@media all and (max-height: 600px) {
+	div.parallax {
+		height: 300px;
 	}
 }

@@ -6,6 +6,11 @@
 		<link rel='stylesheet' type='text/css' href='style.css' />
 	</head>
 	<body>
+		<div class="parallax"
+				style="background-image: url('train.jpg'); background-repeat: no-repeat;"
+				data-0-top="background-position: 50% 50%;"
+				data--500-top="background-position: 50% 100%;"></div>
+
 		<div class="wrapper">
 			<img class="profile" src="du-bois.jpg" alt="Your Name" />
 			<h1>Your Name</h1>
@@ -63,5 +68,8 @@
 				<li class="no-bullet"><a href="#">Older Writings &rarr;</a></li>
 			</ul>
 		</div>
+
+		<script src="skrollr.min.js"></script>
+		<script>var s = skrollr.init();</script>
 	</body>
 </html>
