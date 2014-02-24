@@ -31,6 +31,10 @@ div.wrapper {
 	z-index: 2;
 }
 
+a:hover {
+	text-decoration: none;
+}
+
 img.profile {
 	border-radius: 120px;
 	-moz-border-radius: 120px;
@@ -42,11 +46,19 @@ img.profile {
 	width: 120px;
 }
 
-h1 {
+h1, h1 a {
 	font-size: 28px;
 	font-size: 1.75rem;
 	font-weight: bold;
 	text-align: center;
+}
+
+h1 a {
+	text-decoration: none;
+}
+
+h1 a:hover {
+	text-decoration: underline;
 }
 
 h2 {
@@ -59,7 +71,7 @@ h3 {
 	display: inline;
 }
 
-p, ul, ol {
+p, ul, ol, div.pagination {
 	margin-bottom: 28px;
 	margin-bottom: 1.75rem;
 }
@@ -71,6 +83,22 @@ p.tagline {
 	text-align: center;
 }
 
+sup a {
+	text-decoration: none;
+}
+
+sup a:before {
+	content: "[";
+}
+
+sup a:after {
+	content: "]";
+}
+
+sup a:hover {
+	text-decoration: underline;
+}
+
 li {
 	list-style-position: inside;
 }
@@ -78,10 +106,6 @@ li {
 li.no-bullet {
 	list-style: none;
 	text-indent: 18px;
-}
-
-a:hover {
-	text-decoration: none;
 }
 
 table {
@@ -94,6 +118,25 @@ td {
 	padding-bottom: 1.75rem;
 	vertical-align: top;
 	width: 320px;
+}
+
+div.pagination div {
+	border-top: 1px dashed #000000;
+	float: left;
+	width: 50%;
+}
+
+div.pagination:before, div.pagination:after {
+	content: " ";
+	display: table;
+}
+
+div.pagination:after {
+	clear: both;
+}
+
+div.pagination {
+	*zoom: 1;
 }
 
 .center {
