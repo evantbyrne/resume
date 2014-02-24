@@ -1,0 +1,94 @@
+html, body, h1, h2, h3, p, blockquote, div, span, a, img, table, thead, tbody, tr, th, td, ul, ol, li {
+	border: none;
+	color: #000000;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-size: 1rem;
+	font-style: normal;
+	line-height: 28px;
+	line-height: 1.75rem;
+	margin: 0;
+	padding: 0;
+}
+
+div.wrapper {
+	margin: auto;
+	width: 640px;
+}
+
+img.profile {
+	border-radius: 120px;
+	-moz-border-radius: 120px;
+	-o-border-radius: 120px;
+	-webkit-border-radius: 120px;
+	display: block;
+	height: 120px;
+	margin: 28px auto;
+	margin: 1.75rem auto;
+	width: 120px;
+}
+
+h1 {
+	font-size: 28px;
+	font-size: 1.75rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+h2 {
+	font-size: 20px;
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+
+h3 {
+	display: inline;
+}
+
+p, ul, ol {
+	margin-bottom: 28px;
+	margin-bottom: 1.75rem;
+}
+
+p.tagline {
+	font-size: 20px;
+	font-size: 1.25rem;
+	font-weight: 300;
+	text-align: center;
+}
+
+li {
+	list-style-position: inside;
+}
+
+li.no-bullet {
+	list-style: none;
+	text-indent: 18px;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+table {
+	border-spacing: 0;
+}
+
+td {
+	border-top: 1px dashed #000000;
+	padding-bottom: 28px;
+	padding-bottom: 1.75rem;
+	vertical-align: top;
+	width: 320px;
+}
+
+.right {
+	text-align: right;
+}
+
+@media all and (max-width:660px) {
+	div.wrapper {
+		margin: 0 20px;
+		width: auto;
+	}
+}
