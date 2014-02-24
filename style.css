@@ -11,7 +11,7 @@ html, body, h1, h2, h3, p, blockquote, div, span, a, img, table, thead, tbody, t
 	padding: 0;
 }
 
-div.parallax {
+div.hero {
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
@@ -108,13 +108,19 @@ td {
 }
 
 @media all and (max-height: 760px) {
-	div.parallax {
+	div.hero {
 		height: 400px;
 	}
 }
 
 @media all and (max-height: 600px) {
-	div.parallax {
+	div.hero {
 		height: 300px;
+	}
+}
+
+@media all and (max-height: 400px) {
+	div.hero {
+		height: 150px;
 	}
 }
