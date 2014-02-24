@@ -96,6 +96,10 @@ td {
 	width: 320px;
 }
 
+.center {
+	text-align: center;
+}
+
 .right {
 	text-align: right;
 }
